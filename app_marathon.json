@@ -1,0 +1,15 @@
+{
+    "id": "springboot-sample-8090",
+    "container": {
+      "docker": {
+        "image": "mesos-dev.inframetic.com:5000/gs-spring-boot-docker:latest",
+        "network": "HOST",
+        "portMappings": [
+          {"containerPort": 8000, "servicePort": 8000, "hostPort":8000}
+        ]
+      }
+    },
+    "cpus": 0.2,
+    "mem": 512.0,
+    "instances": 1
+}
