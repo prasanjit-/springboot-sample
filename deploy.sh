@@ -11,6 +11,7 @@ fi
 # destroy old application
 curl -X DELETE -H "Content-Type: application/json" http://${marathon}:8080/v2/apps/springboot-sample-31047
 ssh -t centos@mesos-dev.inframetic.com "sudo su - root -c '/root/devops/scripts/clean_docker' "
+ssh -t centos@mesos-dev.inframetic.com "sudo su - root -c '/root/devops/scripts/clean_existing' "
 
 # I know this one is ugly. But it works for now.
 sleep 6
