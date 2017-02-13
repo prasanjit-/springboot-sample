@@ -1,11 +1,11 @@
 {
-    "id": "springboot-sample-8090",
+    "id": "springboot-sample-31047",
     "container": {
       "docker": {
         "image": "mesos-dev.inframetic.com:5000/gs-spring-boot-docker:latest",
-        "network": "HOST",
+        "network": "BRIDGE",
         "portMappings": [
-          {"containerPort": 8080, "hostPort":8090}
+          { "containerPort": 8080, "hostPort": 31047, "protocol": "tcp" }
         ]
       }
     },
