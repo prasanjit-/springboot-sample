@@ -5,7 +5,7 @@
         "image": "mesos-dev.inframetic.com:5000/gs-spring-boot-docker:latest",
         "network": "HOST",
         "portMappings": [
-          {"containerPort": 8080, "servicePort": 8080, "hostPort":8090}
+          {"containerPort": 8080, "hostPort":8090}
         ]
       }
     },
